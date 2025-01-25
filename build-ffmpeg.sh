@@ -31,7 +31,7 @@ LIBTHEORA=0
 DAV1D=0
 OPENJPEG=0
 BUILD=$PWD/build
-OUTPUT=$PWD/output
+OUTPUT=/opt/noisypeak/np-ux
 SELECTED_LIBRARIES=()
 
 while true; do
@@ -468,4 +468,3 @@ install get_ffmpeg $FFMPEG_VERSION || exit 1
 
 cp -v ffmpeg-$FFMPEG_VERSION/ffmpeg $OUTPUT/ffmpeg$FFMPEG_BINARY_SUFFIX-$FFMPEG_VERSION
 cp -v ffmpeg-$FFMPEG_VERSION/ffprobe $OUTPUT/ffprobe-$FFMPEG_VERSION
-
